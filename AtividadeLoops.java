@@ -85,7 +85,6 @@ public class AtividadeLoops {
 //		System.out.println(mensagem);
 		
 		
-		
 		texto.close();
 	
 	}
