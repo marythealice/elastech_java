@@ -459,9 +459,19 @@ public class AtividadeRevisao {
 					
 					case 5:{
 						
-						System.out.println("Listando todas as contas!");
+						int tamanho = arrayConta.size();
 						
-						System.out.println(arrayConta.toString());
+						for(int i =0; i< tamanho; i++) {
+							
+							int mostraConta = arrayConta.get(i);
+							
+							String mostraNome = arrayNome.get(i);
+							
+							double mostraSaldo = arraySaldo.get(i);
+							
+							System.out.printf("Conta %d, Nome %s, Saldo R$ %.2f", mostraConta, mostraNome, mostraSaldo);
+							
+						}
 						
 						break;
 						
