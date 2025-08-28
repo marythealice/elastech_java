@@ -3,6 +3,8 @@ package Atividades;
 
 import java.util.Scanner;
 
+import javax.security.auth.callback.TextOutputCallback;
+
 
 public class Desafio {
 
@@ -95,7 +97,7 @@ public class Desafio {
 			}
 		}while(opcaoDesafio != 6);
 		
-				
+		texto.close();		
 
 	}
 		
@@ -169,7 +171,7 @@ public class Desafio {
 			
 			do {
 				
-				System.out.println("Digite um numero para tentar adivinhar o numero secreto (1 a 100) ou 0 para sair.");
+				System.out.println("Digite um numero para tentar adivinhar o numero secreto (1 a 100)/");
 				
 				palpite = scanner.nextInt();
 				
@@ -183,7 +185,7 @@ public class Desafio {
 					System.out.println("O seu palpite foi maior que o numero secreto");
 				}
 				
-			}while(palpite != 0 && palpite != numeroSecreto);
+			}while(palpite != numeroSecreto);
 			
 		
 		}
@@ -200,8 +202,10 @@ public class Desafio {
 			
 			}
 			return true;
+			
+			
 		}
 			
-				
+		
 
 }
